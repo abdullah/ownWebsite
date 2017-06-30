@@ -1,0 +1,69 @@
+{
+	"works" : [
+		{
+			"url": "sadece-hosting",
+			"title": "Sadece Hosting",
+			"category": "Website Project",
+			"thumb": "https://i.hizliresim.com/3qLkL2.png",
+			"description": "Sadece hosting is a company which sells people awesome things.",
+			"visit_website_url": "http://sadecehosting.com",
+			"visit_website" : true,
+			"full_images": [
+				"http://greenkod.com/hamit.work/img/works/work1.png",
+				"http://greenkod.com/hamit.work/img/works/work1.png"
+			]
+		},
+		{
+			"url": "all-hungry",
+			"title": "All Hungry",
+			"category": "Mobile Website Project",
+			"thumb": "https://i.hizliresim.com/Dd2jJ6.png",
+			"description": "All Hungry is a company which sells people awesome things.",
+			"visit_website_url": "http://sadecehosting.com",
+			"visit_website" : true,
+			"full_images": [
+				"http://greenkod.com/hamit.work/img/works/work1.png",
+				"http://greenkod.com/hamit.work/img/works/work1.png"
+			]
+		},
+		{
+			"url": "aseo-hosting",
+			"title": "Aseo Hosting",
+			"category": "Website Project",
+			"thumb": "https://i.hizliresim.com/y35kEj.png",
+			"description": "Aseo hosting is a company which sells people awesome things.",
+			"visit_website_url": "http://sadecehosting.com",
+			"visit_website" : true,
+			"full_images": [
+				"http://greenkod.com/hamit.work/img/works/work1.png",
+				"http://greenkod.com/hamit.work/img/works/work1.png"
+			]
+		},
+		{
+			"url": "kuveyt-turk",
+			"title": "Kuveyt Turk",
+			"category": "Website Project",
+			"thumb": "https://i.hizliresim.com/bGDPLZ.png",
+			"description": "Kuveyt Turk is a company which sells people awesome things.",
+			"visit_website_url": "http://sadecehosting.com",
+			"visit_website" : true,
+			"full_images": [
+				"http://greenkod.com/hamit.work/img/works/work1.png",
+				"http://greenkod.com/hamit.work/img/works/work1.png"
+			]
+		},
+		{
+			"url": "did-telekom",
+			"title": "Did Telekom",
+			"category": "Website Project",
+			"thumb": "https://i.hizliresim.com/JlAjlQ.png",
+			"description": "Did is a company which sells people awesome things.",
+			"visit_website_url": "http://sadecehosting.com",
+			"visit_website" : true,
+			"full_images": [
+				"http://greenkod.com/hamit.work/img/works/work1.png",
+				"http://greenkod.com/hamit.work/img/works/work1.png"
+			]
+		}
+	]
+}
