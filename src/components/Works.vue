@@ -1,7 +1,9 @@
 <template>
 	<section id="works">
 		<div class="wrapper">
-			<work-item v-for="work in works" :workData='work'></work-item>
+			<work-item v-for="(work, key) in works"
+			           :key="key"
+			           :workData='work'></work-item>
 		</div>
 	</section>
 </template>
@@ -19,7 +21,7 @@ export default {
 			works: works.works
 		}
 	},
-	created(){
+	created() {
 		this.works = works.works
 	}
 }
