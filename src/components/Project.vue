@@ -21,9 +21,10 @@
              class="work-image">
         <div class="links">
           <router-link class="visit-website prevButton"
-                       :to="getPrevItemsUrl">Previos Project</router-link>
+                       :to="{ name: 'Project', params: { url: getNextItemsUrl }}">Previos Project</router-link>
           <router-link class="visit-website"
-                       :to="getNextItemsUrl">Next Project</router-link>
+                       :to="{ name: 'Project', params: { url: getNextItemsUrl }}">Next Project</router-link>
+
         </div>
       </div>
     </section>
@@ -35,21 +36,36 @@ import Works from './Works.vue'
 import data from '@/assets/data/data.json'
 export default {
   name: 'Project',
-  data() {
-    return {
-      detailItem: data.works.filter((el, index) => {
-        return el.url == this.$route.params.url
-      })
-    }
-  },
+  props: ['url'],
   computed: {
+    detailItem() {
+      return data.works.filter((el, index) => el.url == this.$route.params.url)
+    },
     getNextItemsUrl() {
-      return '/'
-      // return data.works[parseInt(data.works.findIndex(el => el.url == this.$route.params.url) + 1)].url ? data.works[parseInt(data.works.findIndex(el => el.url == this.$route.params.url) + 1)].url : '/'
+      const url = this.url;
+      let workIndex;
+      const work = data.works.filter((work, index) => {
+        if (work.url == url) {
+          workIndex = index;
+          return work;
+        }
+      });
+
+      const next = data.works[workIndex + 1];
+      return next ? next.url : '/';
     },
     getPrevItemsUrl() {
-      return '/'
-      // return data.works[parseInt(data.works.findIndex(el => el.url == this.$route.params.url) - 1)].url ? data.works[parseInt(data.works.findIndex(el => el.url == this.$route.params.url) - 1)].url : '/'
+      const url = this.url;
+      let workIndex;
+      const work = data.works.filter((work, index) => {
+        if (work.url == url) {
+          workIndex = index;
+          return work;
+        }
+      });
+
+      const next = data.works[workIndex - 1];
+      return next ? next.url : '/';
     }
   }
 }
